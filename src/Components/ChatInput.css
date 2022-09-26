@@ -1,0 +1,108 @@
+.chatInput {
+  width: 680px;
+  height: 771px;
+  background: #ffffff;
+  border: 1px solid rgba(210, 216, 228, 0.2);
+  box-shadow: 0px 0px 10px rgba(210, 216, 228, 0.6);
+  border-radius: 24px;
+}
+
+.chatInput__top {
+  padding: 20px;
+}
+
+.chatInput__top input {
+  width: 500px;
+  height: 63px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 2px 1px rgba(87, 87, 87, 0.1);
+  border-radius: 16px;
+  padding-left: 20px;
+  color: #35364b;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
+
+.chatInput__top button {
+  width: 95px;
+  height: 56px;
+  background: linear-gradient(180deg, rgba(106, 47, 228, 0.7) 0%, #6a2fe4 100%);
+  border-radius: 80px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 0.3px solid #ffffff;
+  margin-left: 15px;
+}
+
+.chatInput__bottom {
+  border-top: 0.75px solid #eef0f6;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 642px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.chatInput__bottom__content {
+  padding: 15px;
+}
+
+.chatInput__bottom .message__left,
+.chatInput__bottom .message__right {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.bubble-left {
+  max-width: 300px;
+  padding: 10px;
+  background: #fcfae0;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.bubble-left:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 15px solid #fcfae0;
+  border-bottom: 13px solid transparent;
+}
+
+.bubble-right {
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgba(106, 47, 228, 0.08);
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: #6a2fe4;
+}
+
+.bubble-right:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-left: 15px solid rgba(106, 47, 228, 0.08);
+  border-bottom: 13px solid transparent;
+}

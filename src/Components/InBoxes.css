@@ -1,0 +1,25 @@
+.inboxes {
+  width: 450px;
+  height: 92px;
+  border-bottom: 0.75px solid #eef0f7;
+}
+
+.inboxes .desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inboxes .desc .text {
+  color: #3f3f3f;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.inboxes .desc .date {
+  color: #ff619b;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
